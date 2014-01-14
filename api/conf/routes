@@ -1,0 +1,4 @@
+GET     /                                             controllers.BaseApiController.index
+
+POST    /v1.0/topics/:topicId                         controllers.ProducerApiController.produce(topicId)
+GET     /v1.0/topics/:topicId                         controllers.ConsumerApiController.consume(topicId)
